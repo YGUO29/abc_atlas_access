@@ -20,9 +20,10 @@ No account or login is required for access. ***The purpose of this repo is to
 provide an overview of the available data, how to download and use it through
 example use cases.***
 
-The Spring 2025 public beta data release includes:
+The Fall 2025 public beta data release includes:
 * **[Mouse whole-brain transcriptomic cell type atlas](descriptions/WMB_dataset.md)
   (Hongkui Zeng)**
+* **[Consensus Whole Mouse Brain cell type atlas](descriptions/Consensus-WMB-dataset.md) (AIBS & Macosko)**
 * **[Aging Mouse transcriptomic cell type atlas](descriptions/Zeng_Aging_Mouse_dataset.md)
   (Hongkui Zeng)**
 * **[A molecularly defined and spatially resolved cell atlas of the whole mouse brain](descriptions/Zhuang_dataset.md)
@@ -64,6 +65,7 @@ notebook.
   the cell metadata.
 * **[Mouse whole-brain transcriptomic cell type atlas](descriptions/notebook_subtitle1.md)
   (Hongkui Zeng)**
+* **[Consensus Whole Mouse Brain Notebooks](descriptions/Consensus-WMB-notebooks.md) (AIBS & Macosko)**
 * **[Aging Mouse transcriptomic cell type atlas](descriptions/Zeng_Aging_Mouse_notebooks.md)
   (Hongkui Zeng)**
 * **[A molecularly defined and spatially resolved cell atlas of the whole
@@ -76,7 +78,29 @@ notebook.
 * **[Human-Mammalian Brain - Basal Ganglia](descriptions/HMBA-BG_notebooks.md)
   (HMBA)**
 
+
 ## Release Notes
+* **[Add HMBA-BG spatial data. Update HMBA-BG 10X taxonomy, data, and metadata and MapMyCells files (version 20251031), abc_atlas_access (v1.1.0)]**
+  * Add Consensus Whole Mouse brain datasets.
+    * New Consensus-WMB-AIBS-10X, ~3.9 million, single cell metadata derived
+    from the WMB-10X release hosted through this tool. This release reuses the
+    previous WMB-10X(v2/v3), h5ad files.
+    * New Consensus-WMB-Macosko-10X data and metadata for ~4 million nuclei.
+      * Metadata for ~3.7 million nuclei
+      * Expression matrices for all nuclei with files divided by anatomical
+      region.
+    * New consensus taxonomy derived from the the Allen Institute for Brain
+    Science and Broad Institute Macosko lab Whole Mouse Brain data.
+* **[Add HMBA-BG spatial data. Update HMBA-BG 10X taxonomy, data, and metadata and MapMyCells files (version 20250930), abc_atlas_access (v1.0.0)]**
+  * Added basal ganglia, spatial transcriptomic dataset
+    * ~5.4 million human basal ganglia and adjacent cells
+    * ~3.2 million macaque basal ganglia and adjacent cells
+    * ~1.3 million macaque basal ganglia and adjacent cells
+    * Mapping of all cells into the HMBA-BG taxonomy
+    * Basal Ganglia, parcellation annotations for each cell and annotation polygons.
+  * Updated colors for the cross-species, HMBA-BG taxonomy.
+  * AbcProjecctCache: Added explicit accessors for expression_matrices, image_volumes, and mapmycells.
+    * get_(metadata)data_path, generalized to get_file_path. Deprecation warning added to get_data_path.
 * **[Add HMBA-BG 10X taxonomy, data, and metadata and MapMyCells files (version 20250531), abc_atlas_access (v0.7.0)]**
   * Added the Human-Mammalian Brain - Basal Ganglia (HMBA-BG) 10X dataset.
     * ~2 million single cell transcriptomes with ~16k genes aligned across

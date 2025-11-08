@@ -33,6 +33,10 @@ parts:
       - file: descriptions/Zhuang-ABCA-2
       - file: descriptions/Zhuang-ABCA-3
       - file: descriptions/Zhuang-ABCA-4
+    - file: descriptions/Consensus-WMB-dataset
+      sections:
+      - file: descriptions/Consensus-WMB-10X
+      - file: descriptions/Consensus-WMB-taxonomy
     - file: descriptions/WHB_dataset
       sections:
         - file: descriptions/WHB-10Xv3
@@ -44,9 +48,10 @@ parts:
         - file: descriptions/ASAP-PMDBS-MapMyCells.md
     - file: descriptions/HMBA-BG_dataset
       sections:
+        - file: descriptions/HMBA-BG-taxonomy-CCN20250428
         - file: descriptions/HMBA-10XMultiome-BG-Aligned
         - file: descriptions/HMBA-10XMultiome-BG
-        - file: descriptions/HMBA-BG-taxonomy-CCN20250428
+        - file: descriptions/HMBA-Spatial-BG
 
   - caption: NOTEBOOKS
     chapters:
@@ -68,6 +73,10 @@ parts:
       - file: notebooks/cluster_neighborhood_gallery
       - file: notebooks/ccf_and_parcellation_annotation_tutorial
       - file: notebooks/merfish_ccf_registration_tutorial
+    - file: descriptions/Consensus-WMB-notebooks
+      sections:
+      - file: notebooks/consensus_mouse_clustering_analysis_and_annotation
+      - file: notebooks/consensus_mouse_10X_snRNASeq
     - file: descriptions/Zeng_Aging_Mouse_notebooks
       sections:
         - file: notebooks/Zeng_Aging_Mouse_clustering_analysis_and_annotation
@@ -90,7 +99,8 @@ parts:
       sections:
         - file: notebooks/hmba_bg_clustering_analysis_and_annotation
         - file: notebooks/hmba_bg_10X_snRNASeq_tutorial
-
+        - file: notebooks/hmba_bg_spatial_slabs_and_taxonomy
+        - file: notebooks/hmba_bg_spatial_genes
 
   - caption: ADDITIONAL RESOURCES
     chapters:
@@ -100,3 +110,5 @@ parts:
       - file: docs/cluster_annotations/README
       - file: docs/gene_lists/README
       - file: docs/parcellation_annotations/README
+      - file: docs/supplemental_metadata_descriptions/README
+      - file: docs/neuroglancer_hmba/README
